@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angelo's Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="shortcut icon" href="assets/unnamed.jpg" type="image/x-icon">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" data-testid="test-preloader">
+        <div class="preloader-spin"></div>
+    </div>
+
+    <!-- Profile Card -->
+    <article data-testid="test-profile-card" class="profile-card" aria-label="Angelo Chike's profile">
+        <!-- Avatar Container -->
+        <figure data-testid="test-user-avatar-container" class="avatar-container">
+            <img 
+                data-testid="test-user-avatar" 
+                src="assets/linkedIn.jpg" 
+                alt="Portrait of Angelo Chike" 
+                class="profile-avatar">
+        </figure>
+
+        <!-- Header (Name) -->
+        <header class="profile-header">
+            <h2 data-testid="test-user-name" class="user-name">ANGELO CHIKE</h2>
+        </header>
+
+        <!-- Bio Section -->
+        <section class="bio-section">
+            <h3 class="section-title" aria-hidden="true">About</h3>  
+            <p data-testid="test-user-bio" class="user-bio">
+                A Mechatronics Engineering Student and Dynamic Full Stack Web Developer, with a passion for learning and applying problem-solving across diverse fields, Born in Port-Harcourt City, Nigeria. Think of me as someone who enjoys figuring out how things move, fly, float, or spark into life. Hence my Interest in Software Development, Advanced Mobility and Energy Systems. I look forward to completing my HNG internship so i can move on to other challenges.
+            </p>
+            <!--  Read More Animation -->
+             <a href="#" 
+       class="learn-more-link" 
+       aria-label="Toggle additional profile sections" 
+       tabindex="0"
+       data-testid="test-user-learn-more-link">
+        <div class="arrow" data-testid="test-user-arrow">
+            <span data-testid="test-user-arrow-icon-1"></span>
+            <span data-testid="test-user-arrow-icon-2"></span>
+            <span data-testid="test-user-arrow-icon-3"></span>
+        </div>
+        <div class="learn-more-box" data-testid="test-user-learn-more-box">
+            Learn More
+        </div>
+    </a>
+        </section>
+        <div class="hidden-group hidden-section">
+        <!-- Time Display -->
+        <div data-testid="test-user-time" class="time-container">
+            <span data-testid="test-user-time" class="user-time"></span>
+        </div>
+
+        <!-- Social Links -->
+        <nav data-testid="test-user-social-links" class="social-links" aria-label="Social media links">
+            <ul class="social-list" role="list">
+                <li class="social-item">
+                    <a 
+                        href="https://twitter.com/AngeloChike" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        data-testid="test-user-social-twitter"
+                        class="social-link"
+                    >
+                        <i class="fab fa-twitter social-icon"></i>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a 
+                        href="https://wa.me/+123456789" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        data-testid="test-user-social-whatsapp"
+                        class="social-link"
+                    >
+                        <i class="fab fa-whatsapp social-icon"></i>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a 
+                        href="https://github.com/AngeloChike" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        data-testid="test-user-social-github"
+                        class="social-link"
+                    >
+                        <i class="fab fa-github social-icon"></i>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a 
+                        href="https://linkedin.com/in/AngeloChike" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        data-testid="test-user-social-linkedin"
+                        class="social-link"
+                    >
+                        <i class="fab fa-linkedin social-icon"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Hobbies -->
+        <section data-testid="test-user-hobbies" class="section hobbies">
+            <h3 class="section-title">Hobbies</h3>
+            <ul class="hobbies-list" role="list">
+                <li>Gaming</li>
+                <li>Reading and Writing (code or whatever)</li>
+                <li>Watching Movies</li>
+                <li>Cooking</li>
+            </ul>
+        </section>
+
+        <!-- Dislikes -->
+        <section data-testid="test-user-dislikes" class="section dislikes">
+            <h3 class="section-title">Dislikes</h3>
+            <ul class="dislikes-list" role="list">
+                <li>Violence</li>
+                <li>Politics</li>
+                <li>Bright or fluorescent lighting</li>
+                <li>Being interrupted frequently</li>
+            </ul>
+        </section>
+        </div>
+    </article>
+
+    <script src="app.js"></script>
+</body>
+</html>
