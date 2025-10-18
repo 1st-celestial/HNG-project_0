@@ -16,7 +16,7 @@ Follow these steps to run the project locally on your system:
 Double-click the index.html file or open it manually in your preferred browser (e.g., Chrome, Edge, Firefox).
 
 
-**Features**
+**Features**:
 Fully responsive design for mobile and desktop
 
 Profile avatar and short professional bio
@@ -31,7 +31,7 @@ Social media links with accessible icons
 
 Clean, semantic HTML5 structure
 
-**Testing & Validation**
+**Testing & Validation**:
 Manual and automated testing were performed to verify:
 
 Proper visibility toggle for hidden sections
@@ -40,7 +40,7 @@ Smooth preloader animation and timing accuracy
 
 Responsive scaling on various screen widths
 
-Detailed test results are documented in TESTING_NOTES.md.
+Detailed test results are documented in [TESTING_NOTES.md.](https://github.com/1st-celestial/HNG-project_0/blob/main/TESTING_NOTES.md.)
 
 👤 Author
 Angelo Chike
