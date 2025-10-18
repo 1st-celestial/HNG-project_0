@@ -40,7 +40,7 @@ Smooth preloader animation and timing accuracy
 
 Responsive scaling on various screen widths
 
-Detailed test results are documented in [TESTING_NOTES.md.](https://github.com/1st-celestial/HNG-project_0/blob/main/TESTING_NOTES.md.)
+Detailed test results are documented in [[TESTING_NOTES.md](https://github.com/1st-celestial/HNG-project_0/blob/main/TESTING_NOTES.md)]
 
 👤 Author
 Angelo Chike
