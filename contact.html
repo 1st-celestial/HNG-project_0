@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+        <link rel="shortcut icon" href="assets/unnamed.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="contact.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        
+</head>
+<body>
+     <nav class="nav" role="navigation" aria-label="Main menu">
+    <div class="brand">
+      <div class="logo"><img src="assets/unnamed.jpg" alt=""></div>
+      <span>1st_celestial</span>
+    </div>
+
+    <div class="links" role="menubar" aria-hidden="false">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <button class="hamburger" aria-expanded="false" aria-controls="mobileMenu" id="hambtn" title="Open menu">
+      <i class="fa fa-bars"></i>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <a href="index.html">Home</a><br>
+    <a href="about.html">About</a><br>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- DARK BANNER -->
+  <section class="banner" role="region" aria-label="Banner">
+    <h1>Reach Out!</h1>
+    <p>I'm eager to hear from you — drop a message, let’s turn that thought into an actual conversation.</p>
+  </section>
+
+  <main>
+    <div class="container">
+      <!-- LEFT: Contact Info -->
+      <div class="ContactInfo" id="contact-info">
+        <div class="box">
+          <div class="icon">
+            <!-- keep your home lottie if present -->
+            <i class="lottie-icon" id="home-icon" data-json="assets/home.json" aria-label="Home Icon" tabindex="0"></i>
+          </div>
+          <div class="text">
+            <h3>Address</h3>
+            <p>No.9 Ajoke Street, Nnobi, Surulere, Lagos, Nigeria.</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="icon">
+            <!-- phone (CSS vibrate) -->
+            <i style="color: black; width: 30; height: 30px; margin-top: 5px; margin-left: 10px;" id="phone-icon" class="fa fa-phone" aria-label="Phone" tabindex="0"></i>
+          </div>
+          <div class="text">
+            <h3>Phone</h3>
+            <a href="tel:+2349162745477" style="text-decoration:none;color:inherit;">+234 (916)-274-5477</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="icon">
+            <i class="lottie-icon" id="mail-icon" data-json="assets/mail.json" aria-label="Mail Icon" tabindex="0"></i>
+          </div>
+          <div class="text">
+            <h3>Email</h3>
+            <a href="mailto:theangelochike@outlook.com" style="text-decoration:none;color:inherit;">theangelochike@outlook.com</a>
+          </div>
+        </div>
+
+        <h2 class="txt">Connect with me</h2>
+        <ul class="sci" data-testid="test-user-social-links" aria-label="Social links">
+         <a href="https://www.linkedin.com/in/chike-angelo-264110387" data-testid="test-user-social-linkedin" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <li><a href="https://github.com/1st-celestial" data-testid="test-user-social-github" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+          <li><a href="https://wa.me/2349162745477" data-testid="test-user-social-whatsapp" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
+        </ul>
+      </div>
+
+      <!-- RIGHT: Contact Form -->
+      <aside class="ContactForm" id="contact-form-panel" aria-labelledby="contactFormHeading" role="region">
+        <form id="contact-form" novalidate>
+          <h2 id="contactFormHeading">Illuminate your words</h2>
+          <p id="form-instructions" class="visually-hidden">All fields are required. Use Tab to navigate.</p>
+
+          <div class="inputBox">
+            <label for="fullName">Full Name</label>
+            <input
+              type="text" id="fullName" name="fullName"
+              data-testid="test-contact-name"
+              required
+              aria-describedby="test-contact-error-name" />
+            <small data-testid="test-contact-error-name" id="test-contact-error-name" class="error-message" aria-live="polite"></small>
+          </div>
+
+          <div class="inputBox">
+            <label for="email">Email</label>
+            <input
+              type="email" id="email" name="email"
+              data-testid="test-contact-email"
+              required
+              aria-describedby="test-contact-error-email" />
+            <small data-testid="test-contact-error-email" id="test-contact-error-email" class="error-message" aria-live="polite"></small>
+          </div>
+
+          <div class="inputBox">
+            <label for="subject">Subject</label>
+            <input
+              type="text" id="subject" name="subject"
+              data-testid="test-contact-subject"
+              required
+              aria-describedby="test-contact-error-subject" />
+            <small data-testid="test-contact-error-subject" id="test-contact-error-subject" class="error-message" aria-live="polite"></small>
+          </div>
+
+          <div class="inputBox">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5"
+              data-testid="test-contact-message"
+              required minlength="10"
+              aria-describedby="test-contact-error-message"></textarea>
+            <small data-testid="test-contact-error-message" id="test-contact-error-message" class="error-message" aria-live="polite"></small>
+          </div>
+
+          <button type="submit" data-testid="test-contact-submit">Send Message</button>
+
+          <p id="form-success" data-testid="test-contact-success" class="success-message" role="status" aria-live="polite">✅ Message successfully validated — ready to send.</p>
+        </form>
+      </aside>
+    </div>
+  </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div>&copy; <strong>AC</strong> — Built with curiosity.</div>
+            <div class="footer-subtitle">Made by CELESTIAL</div>
+        </div>
+    </footer>
+    
+    <script src="https://unpkg.com/lottie-web@5.12.0/build/player/lottie.min.js"></script>
+    <script src="nav.js"></script>
+    <script src="cont.js"></script>
+</body>
+</html>
