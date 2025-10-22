@@ -1,7 +1,8 @@
 ✅ Page loads without console errors  
 ✅ Hidden sections remain hidden by default  
 ✅ Clicking “Read More” smoothly expands hidden content  
-✅ Clicking “Read Less” hides content smoothly with fade-out animation  
+✅ Clicking “Read Less” hides content smoothly with fade-out animation
+✅ hamburger menu functional
 ✅ Time updates every second with `Date.now()`  
 ✅ Works on Chrome, Firefox, and Edge  
 ✅ Fully responsive at mobile (≤ 768 px) and desktop (> 1024 px) widths  

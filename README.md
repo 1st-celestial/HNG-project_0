@@ -19,9 +19,9 @@ Double-click the index.html file or open it manually in your preferred browser (
 **Features**:
 Fully responsive design for mobile and desktop
 
-Profile avatar and short professional bio
+Profile avatar and short professional bio with a little about me and contact page
 
-Dynamic current time display using Date.now()
+Dynamic current time display using Date.now() animated icons and cards
 
 Smooth “Learn More / Read Less” toggle animation
 
